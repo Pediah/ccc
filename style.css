@@ -147,7 +147,14 @@ section {
     border-radius: 5px;
     text-align: center; /* Center-align text */
 }
-
+#about img {
+    width: 100%; /* Make the image fill the width of the container */
+    max-width: 600px; /* Limit the maximum width of the image */
+    display: block; /* Ensure the image is displayed as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+    border-radius: 10px; /* Add rounded corners to the image */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+}
 #about ul {
     list-style-type: none;
     text-decoration: none;
