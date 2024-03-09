@@ -152,6 +152,58 @@ section {
     list-style-type: none;
     text-decoration: none;
 }
+/* CSS for List Items */
+#slider ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+    overflow: hidden; /* Hide overflowing content */
+  }
+  
+  #slider ul li {
+    display: inline-block; /* Display list items in a row */
+    opacity: 0; /* Initially hide list items */
+    margin-right: 20px; /* Add margin between items */
+    animation: slideIn 1s forwards; /* Apply animation to slide in */
+  }
+  
+  /* CSS Animation for Slider */
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%); /* Start from left of viewport */
+      opacity: 0; /* Initially invisible */
+    }
+    100% {
+      transform: translateX(0); /* Slide in to original position */
+      opacity: 1; /* Fully visible */
+    }
+  }
+  
+  /* Delay for Each List Item */
+  #slider ul li:nth-child(1) {
+    animation-delay: 0s; /* No delay for first item */
+  }
+  
+  #slider ul li:nth-child(2) {
+    animation-delay: 0.5s; /* Delay for second item */
+  }
+  
+  #slider ul li:nth-child(3) {
+    animation-delay: 1s; /* Delay for third item */
+  }
+  
+  #slider ul li:nth-child(4) {
+    animation-delay: 1.5s; /* Delay for fourth item */
+  }
+  
+  #slider ul li:nth-child(5) {
+    animation-delay: 2s; /* Delay for fifth item */
+  }
+  
+  #slider ul li:nth-child(6) {
+    animation-delay: 2.5s; /* Delay for sixth item */
+  }
+  
 form {
     width: 300px; /* Adjust the width as needed */
     margin: 0 auto; /* Center the form */
